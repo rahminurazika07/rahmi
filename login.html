@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Login</title>
+  <link rel="stylesheet" href="./assets/vendors/bootsrap-4.6/css/bootstrap.min.css" />
+
+  <style>
+    .error {
+      border: 1px solid #ff6c6c;
+      border-radius: 4px;
+      padding: 12x;
+      margin-bottom: 18px;
+      background: #ff7272;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-5">
+        <img src="assets/images/library.png" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header bg-transparent mb-0">
+            <h5 class="text-center">Login <span class="font-weight-bold text-primary">Perpustakaan</span></h5>
+          </div>
+          <div class="card-body">
+            <form action="" class="form">
+              <form class="dropdown-menu p-4">
+                <div class="error" style="display: none;"></div>
+                <div class="form-group">
+                  <label form="email">Username</label>
+                  <input type="text" class="form-control" name="email" id="email" required
+                  oninvalid="this.setCustomValidity('Username harus di isi')"
+                  oninput="setCustomValidity('')">
+                </div>
+                <div class="form-group">
+                  <label form="password">Password</label>
+                  <input type="text" class="form-control" name="password" id="password" required 
+                  oninvalid="this.setCustomValidity('Password harus di isi')" oninput="setCustomValidity('')">
+                  
+                </div>
+                <button type="submit" class="form form-control btn-primary" value="login">Login</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="app.js"></script>
+
+</html>
